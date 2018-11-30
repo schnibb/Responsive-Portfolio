@@ -1,0 +1,256 @@
+        html,
+        body {
+            height: 100%;
+        }
+        
+        .outer {
+            width: 100%;
+            border-bottom: solid 1px #cccccc;
+        }
+        
+        .header {
+            display: flex;
+            background-color: #ffffff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            justify-content: space between;
+            width: 960px;
+            margin: auto;
+        }
+        
+        .name {
+            background-color: #4aaaa5;
+            font-size: 24px;
+            color: #fefffe;
+        }
+        
+        .name a {
+            color: #ffffff;
+        }
+        
+        .about {
+            margin-left: auto;
+        }
+        
+        .about a,
+        .portfolio a,
+        .contact a {
+            color: #777777;
+            font-size: 20px;
+        }
+        
+        .about a:hover,
+        .portfolio a:hover,
+        .contact a:hover {
+            color: #000000;
+            font-weight: bolder;
+        }
+        
+        .name a:hover {
+            font-weight: bolder;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .header>div {
+            padding: 20px;
+        }
+        
+        .contentOuter {
+            display: flex;
+            flex-direction: column;
+            background-image: url(../images/dust_scratches.png);
+            min-height: 100%;
+            padding-bottom: 50px;
+        }
+        
+        .content {
+            flex: 1 0 auto;
+            background: #ffffff;
+            font-family: 'Arial', 'Helvetcia Neue', Helvetica, sans-serif;
+            line-height: 1.5;
+            min-width: 920px;
+            margin: auto;
+            margin-top: 30px;
+            margin-bottom: 80px;
+            border: 1px solid #cccccc;
+            padding: 20px;
+            color: #777777;
+            overflow: auto;
+            font-size: 16pt;
+        }
+        
+        h1 {
+            color: #4aaaa5;
+            border-bottom: 3px solid #cccccc;
+            border-width: 20%;
+        }
+        
+        #aboutPic {
+            float: left;
+            margin-right: 15px;
+        }
+        
+        .footer {
+            position: relative;
+            height: 50px;
+            border-top: 8px solid #4aaaa5;
+            background: #656665;
+            color: #fefffe;
+            text-align: center;
+            margin-top: -58px;
+        }
+        
+        #name {
+            width: 98%;
+            padding: 5px;
+        }
+        
+        #email {
+            width: 98%;
+            padding: 5px;
+        }
+        
+        #message {
+            height: 200px;
+            width: 99%;
+        }
+        
+        #name:focus,
+        #email:focus,
+        #message:focus {
+            background: yellow;
+        }
+        
+        #submit {
+            background: #4aaaa5;
+            color: #ffffff;
+            width: 180px;
+            height: 40px;
+            padding: 3px;
+            margin-top: 10px;
+            font-size: 18px;
+        }
+        
+        .imageSet {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 20px;
+        }
+        
+        .image {
+            position: relative;
+        }
+        
+        .image>img {
+            padding: 20px 44px 10px 0;
+        }
+        
+        .image>img:hover {
+            opacity: 0.2;
+        }
+        
+        .label {
+            position: absolute;
+            background: #4aaaa5;
+            color: #ffffff;
+            top: 60%;
+            left: 0;
+            right: 44px;
+            bottom: 15%;
+        }
+        
+        .label>h4 {
+            text-align: center;
+            font-size: 10pt;
+        }
+        
+        @media screen and (max-width: 640px) {
+            .html,
+            .body {
+                min-width: 640px;
+            }
+            .outer {
+                min-width: 500px;
+            }
+            .header,
+            {
+                min-width: 500px;
+                text-align: center;
+            }
+            .contentOuter {
+                min-width: 640px;
+            }
+            #aboutPic {
+                width: 500px;
+                float: none;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .content {
+                min-width: 600px;
+            }
+            .footer {
+                min-width: 640px;
+            }
+            p {
+                width: 580px;
+                text-align: justify;
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .html,
+            .body {
+                min-width: 768px;
+            }
+            .outer {
+                min-width: 700px;
+            }
+            .header,
+            {
+                min-width: 700px;
+                text-align: center;
+            }
+            .contentOuter {
+                min-width: 768px;
+            }
+            .content {
+                min-width: 720px;
+            }
+            .footer {
+                min-width: 768px;
+            }
+            p {
+                width: 600px;
+                text-align: justify;
+            }
+        }
+        
+        @media screen and (max-width: 980px) {
+            .html,
+            .body {
+                min-width: 980px;
+            }
+            .outer {
+                min-width: 980px;
+            }
+            .header,
+            {
+                min-width: 980px;
+                text-align: center;
+            }
+            .contentOuter {
+                min-width: 980px;
+            }
+            .content {
+                min-width: 600px;
+            }
+            .footer {
+                min-width: 980px;
+            }
+            p {
+                text-align: justify;
+            }
+        }
